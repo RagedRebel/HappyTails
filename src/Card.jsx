@@ -1,14 +1,14 @@
-import dog from "./assets/germanshepherd.jpeg"
+import dog from "./assets/germanshepherd.jpeg";
 
-function Card(){
-    
-    return(
-        <div className="card">
-            <h2 className="card-title">Dog</h2>
-            <p className="card-text">German Shepherd</p>
-            <img className="card-pic" alt="Image"src={dog}></img>
-        </div>
-    );
 
+function Card() {
+  return (
+    <>
+      <h2>Dog</h2>
+      <p className="text-gray-600">German Shepherd</p>
+      <img className="h-10 w-10" src={dog} alt="Image" />
+    </>
+  );
 }
-export default Card
+
+export default Card;
