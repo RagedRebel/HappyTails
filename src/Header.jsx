@@ -1,15 +1,12 @@
 function Header(){
 
     return(
-        <header>
-            <h1>
-                My website</h1>
-            <nav>
-                <li><a href="#">Home</a></li>
-                <li>About</li>
-            </nav>
-            <hr></hr>
-        </header>
+        <div className="bg-rose-600 h-20">
+            <h1 className="text-white text-3xl font-bold font-logo" >HappyTails</h1>
+
+        </div>
+             
+        
     );
 }
 export default Header

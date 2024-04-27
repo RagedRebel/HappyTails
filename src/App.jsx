@@ -6,7 +6,7 @@ import './app.css'
 function App(){
   return(
     <>
-     
+      <Header/>
       <Card/>
       <Card/>
       <Card/>
