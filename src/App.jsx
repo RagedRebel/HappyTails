@@ -1,23 +1,23 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Card from './Card.jsx'
-import Searchbar from './Searchbar.jsx'
-import './app.css'
-import dog from "./assets/germanshepherd.jpeg";
-import cat from "./assets/cat.jpeg";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Welcome from "./pages/Welcome.jsx";
 
 function App(){
   return(
-    <>
-      <Header/>
-      <Searchbar/>
-      <Card img={dog} pet="Dog" breed="German Shepherd"/>
-      <Card img={cat} pet="Cat" breed="Tuxedo"/>
-      <Footer/>
+    <div>
+      <BrowserRouter>
+      <Routes>
+      <Route index element={<Welcome/>}/>
+      <Route path="/welcome" element={<Welcome/>}/>
+      <Route path="/home" element={<Home/>}/>
+
+
+      </Routes>
+        </BrowserRouter>
+    </div>
     
     
-  </>
+
   );
 }
 export default App

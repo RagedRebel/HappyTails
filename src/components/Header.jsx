@@ -1,4 +1,4 @@
-import logo from "./assets/happytails.png"
+import logo from "../assets/happytails.png"
 import Dropdown from "./Dropdown.jsx";
 
 function Header(){
