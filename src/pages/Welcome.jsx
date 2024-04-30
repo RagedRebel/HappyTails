@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import '../app.css'
 
 
 function Welcome(){
@@ -7,7 +8,7 @@ function Welcome(){
         <p>Welcomeeee</p>
         <Footer/>
         <a href="/home" target="_self">
-        <button className="bg-teal-300 border-e-white" >Log in</button>
+        <button className="bg-teal-300 " >Log in</button>
         </a>
         </>
     );

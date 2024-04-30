@@ -1,5 +1,6 @@
 import logo from "../assets/happytails.png"
 import Dropdown from "./Dropdown.jsx";
+import '../app.css';
 
 function Header(){
 

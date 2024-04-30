@@ -1,4 +1,4 @@
-
+import '../app.css'
 
 function Card(props) {
   return (
