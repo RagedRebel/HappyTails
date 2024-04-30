@@ -1,15 +1,15 @@
 import Footer from "../components/Footer";
+import Login from "../components/Login";
 import '../app.css'
 
 
 function Welcome(){
     return(
         <>
-        <p>Welcomeeee</p>
+        
+        <Login/>
         <Footer/>
-        <a href="/home" target="_self">
-        <button className="bg-teal-300 " >Log in</button>
-        </a>
+        
         </>
     );
 }
