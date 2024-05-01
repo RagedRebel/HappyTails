@@ -5,8 +5,10 @@ import Searchbar from '../components/Searchbar.jsx'
 import dog from "../assets/germanshepherd.jpeg";
 import cat from "../assets/cat.jpeg";
 import '../app.css'
+import supabase from '../Supabase.jsx';
 
 function Home(){
+  console.log(supabase)
     return(
       <>
         <Header/>

@@ -6,7 +6,7 @@ import '../app.css'
 
 function Welcome(){
     return(
-        <div className="bg-rose-600 overscroll-none">
+        <div className="bg-rose-600">
         <Login/>
         <Footer/>
         </div>);
