@@ -14,7 +14,7 @@ function Login(){
       </label>
         <input type="password" name="Password" className="block w-64 rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mt-2"/>
         <a href="/home" target="_self">
-        <button className="bg-violet-300 rounded-full text-gray-900 m-3 w-14 h-7" >Log In</button>
+        <button className="bg-indigo-300 rounded-full text-gray-900 m-3 w-14 h-7 hover:bg-indigo-500" >Log In</button>
         </a></div></div>
     );
 }
