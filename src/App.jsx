@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Welcome from "./pages/Welcome.jsx";
+import Create from "./pages/signin.jsx"
 import './app.css'
 
 function App(){
@@ -11,6 +12,7 @@ function App(){
       <Route index element={<Welcome/>}/>
       <Route path="/welcome" element={<Welcome/>}/>
       <Route path="/home" element={<Home/>}/>
+      <Route path="/sign-in" element={<Create/>}/>
 
 
       </Routes>
