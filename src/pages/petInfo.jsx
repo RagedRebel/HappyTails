@@ -1,16 +1,14 @@
-import Petdesc from "../components/pet-desc";
+import Petdesc from "../components/pet_desc";
 import Footer from "../components/Footer";
 import { useParams, useNavigate} from 'react-router-dom'
 import {useState, useEffect} from 'react'
-import supabase from "../Supabase";
+import supabase from "../Supabase.jsx";
 
 function Petinfo(){
   const {id}=useParams()
   const navigate=useNavigate()
-  const [name,setName]=useState('')
-  const [breed,setBreed]=useState('')
-  const [type,setType]=useState('')
-  const [img,setImg]=useState('')
+
+  const[pet,setPet]=useState(null)
 
   useEffect(()=>{
     const fetchPet=async () =>{
@@ -26,10 +24,7 @@ function Petinfo(){
     }
 
     if (data){
-      setName(data.name)
-      setBreed(data.breed)
-      setType(data.type)
-      setImg(data.img)
+      setPet(data)
       console.log(data)
 
     }
@@ -38,12 +33,9 @@ function Petinfo(){
   },[id,navigate])
 
 
-
-
-
     return(
-      <>
-      
+      <>   
+      {pet &&<Petdesc key={pet.id} pet={pet}/>} 
       <Footer/> 
     </>
     );
