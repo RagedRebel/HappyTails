@@ -1,6 +1,5 @@
 import Footer from "../components/Footer";
 import Login from "../components/Login";
-import Image from "../assets/welcome.jpeg"
 import '../app.css'
 
 

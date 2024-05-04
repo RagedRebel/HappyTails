@@ -5,7 +5,7 @@ function Login(){
     return (
 <div className="flex justify-center items-center m-auto h-screen">
         <div className="bg-slate-200 shadow-md rounded-lg border-2 border-gray-400 flex-col justify-center items-center flex w-72 h-69 ">
-        <h1 className=" text-gray-900 font-semibold my-4">Login to your account</h1>
+        <h1 className=" text-gray-900 font-semibold my-4">Login to your Account</h1>
         <label  className="inline-block text-sm font-medium leading-6 text-gray-900 place-self-start ml-5 ">
         Username:
       </label>
@@ -18,7 +18,7 @@ function Login(){
         <button className="bg-indigo-300 rounded-full text-gray-900 m-3 w-14 h-7 hover:bg-indigo-500" >Log In</button>
         </a>
         <a href="/sign-in" target="_self">
-        <p className="underline italic text-blue-500 mb-2">I dont have an Account</p>
+        <p className="underline italic text-blue-500 mb-4">I dont have an Account</p>
         </a>
         </div></div>
     );
