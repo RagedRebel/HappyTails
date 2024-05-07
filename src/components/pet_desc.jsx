@@ -12,6 +12,7 @@ function Petdesc({pet}){
         <img className="aspect-video max-h-64 rounded-sm shadow-md" src={pet.pet_img} alt="Image" />
         <h2 className="text-5xl font-sans font-semibold p-10 ">{pet.pet_name}</h2>
         <p className="text-gray-600 text-sm italic">{pet.pet_breed}</p>
+        <button className="bg-indigo-300 rounded-full text-gray-900 m-3 p-1.5 w-auto h-auto hover:bg-indigo-500">Adopt Pet</button>
       </div>
     </div>
     
