@@ -3,7 +3,7 @@
 
 function Login(){
     return (
-<div className="flex justify-center items-center m-auto h-screen">
+<div className="flex justify-center items-center m-auto h-screen pb-12">
         <div className="bg-slate-200 shadow-md rounded-lg border-2 border-gray-400 flex-col justify-center items-center flex w-72 h-69 ">
         <h1 className=" text-gray-900 font-semibold my-4">Login to your Account</h1>
         <label  className="inline-block text-sm font-medium leading-6 text-gray-900 place-self-start ml-5 ">

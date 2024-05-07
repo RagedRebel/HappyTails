@@ -34,7 +34,7 @@ function Petinfo(){
 
 
     return(
-      <>   
+      <>  
       {pet &&<Petdesc key={pet.id} pet={pet}/>} 
       <Footer/> 
     </>
