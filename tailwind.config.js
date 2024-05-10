@@ -4,7 +4,8 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily:{
-      'logo':['Dancing Script']
+      'logo':['Dancing Script'],
+      'petname':['Poetsen One']
     }
    
   },
