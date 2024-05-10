@@ -1,8 +1,10 @@
 import supabase from "../Supabase";
-import {Link} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+
 
 
 function Petdesc({pet}){
+    const navigate = useNavigate();
 
     const handleAdopt=async()=>{
         const{data,error}=await supabase
@@ -13,9 +15,11 @@ function Petdesc({pet}){
     if (error){
         console.log(error)
     }
+    
     if(data){
-        <Link to={'/thank-you'}/>
+       
         console.log(data)
+        navigate('/thank-you')
     }
     }
     return(
