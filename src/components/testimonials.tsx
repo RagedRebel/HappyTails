@@ -31,7 +31,7 @@ export default function Testimonials(){
     return(
          <section
           id="testimonials"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-rose-50/30 relative overflow-hidden"
+          className="w-full py-12 md:py-24 lg:py-28 bg-gradient-to-br from-gray-50 to-rose-50/30 relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-[url('/placeholder.svg?height=50&width=50')] opacity-5"></div>
           <div className="container px-4 md:px-6 relative">

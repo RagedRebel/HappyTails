@@ -32,28 +32,28 @@ export default function Hero(){
                 <div className="flex flex-col gap-2 min-[400px]:flex-row animate-fade-in animation-delay-500">
                   <Button
                     size="lg"
-                    className="bg-rose-500 hover:bg-rose-600 text-white transform hover:scale-105 transition-all duration-300 hover:shadow-lg group"
+                    className="bg-rose-500 hover:bg-rose-600 text-white transform hover:scale-105 transition-all duration-300 hover:shadow-lg group cursor-pointer"
                   >
                     <span className="group-hover:animate-pulse">Browse Available Pets</span>
                   </Button>
                   <Button
                     variant="outline"
                     size="lg"
-                    className="border-rose-500 text-rose-500 hover:bg-rose-50 bg-transparent transform hover:scale-105 transition-all duration-300 hover:shadow-lg"
+                    className="border-rose-500 text-rose-500 hover:bg-rose-50 bg-transparent transform hover:scale-105 transition-all duration-300 hover:shadow-lg cursor-pointer"
                   >
                     Learn About Adoption
                   </Button>
                 </div>
                 <div className="flex items-center gap-4 text-sm text-gray-600 animate-fade-in animation-delay-700">
-                  <div className="flex items-center gap-1 group cursor-pointer">
-                    <Heart className="h-4 w-4 text-red-500 group-hover:animate-bounce" />
-                    <span className="group-hover:text-rose-500 transition-colors duration-300">
+                  <div className="flex items-center gap-1 transition hover:scale-110 duration-500">
+                    <Heart className="h-4 w-4 text-red-500" />
+                    <span>
                       500+ Happy Adoptions
                     </span>
                   </div>
-                  <div className="flex items-center gap-1 group cursor-pointer">
-                    <Shield className="h-4 w-4 text-green-500 group-hover:animate-pulse" />
-                    <span className="group-hover:text-rose-500 transition-colors duration-300">Health Guaranteed</span>
+                  <div className="flex items-center gap-1 transition hover:scale-110 duration-500 ">
+                    <Shield className="h-4 w-4 text-green-500 " />
+                    <span >Health Guaranteed</span>
                   </div>
                 </div>
               </div>

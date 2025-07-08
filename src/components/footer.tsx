@@ -7,7 +7,7 @@ export default function footer(){
 
     return(
         <ScrollReveal animation="fadeUp">
-        <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gradient-to-r from-gray-50 to-rose-50/30">
+        <footer className="flex flex-col gap-2 sm:flex-row py-4 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gradient-to-r from-gray-50 to-rose-50/30">
           <div className="flex items-center gap-2 group">
             <Heart className="h-5 w-5 text-rose-500 group-hover:animate-pulse" />
             <p className="text-xs text-gray-600 group-hover:text-rose-500 transition-colors duration-300">

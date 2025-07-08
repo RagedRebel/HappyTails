@@ -29,7 +29,7 @@ const features = [
 
 export default function featuresCard(){
     return(
-        <section className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
+        <section className="w-full py-12 md:py-24 lg:py-28 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-rose-50/30 to-transparent"></div>
                   <div className="container px-4 md:px-6 relative">
                     <ScrollReveal animation="fadeUp">
