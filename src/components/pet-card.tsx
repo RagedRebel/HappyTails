@@ -3,7 +3,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Heart, MapPin, Calendar } from "lucide-react"
+import { Heart, MapPin, Calendar, Mars,Venus} from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { easeOut,easeInOut } from "framer-motion"
@@ -168,7 +168,22 @@ export function PetCard({ pet, index }: PetCardProps) {
                 >
                   <span className="font-medium">{pet.breed}</span>
                   <span className="mx-2">•</span>
-                  <span>{pet.gender}</span>
+                  <span className="flex items-center group cursor-pointer">
+                    {pet.gender === "Female" ? (
+                      <Venus className="mr-1 h-4 w-4 group-hover:text-pink-500 transition-colors duration-200" />
+                    ) : (
+                      <Mars className="mr-1 h-4 w-4 group-hover:text-blue-500 transition-colors duration-200" />
+                    )}
+                    <span
+                      className={`transition-colors duration-200 ${
+                        pet.gender === "Female"
+                          ? "group-hover:text-pink-500"
+                          : "group-hover:text-blue-500"
+                      }`}
+                    >
+                      {pet.gender}
+                    </span>
+                  </span>
                 </motion.div>
 
                 <motion.div
