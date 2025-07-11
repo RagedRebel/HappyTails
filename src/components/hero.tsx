@@ -1,9 +1,12 @@
 import { Button } from "./ui/button";
 import { useState,useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Shield,Heart } from "lucide-react";
 
 export default function Hero(){
+
+  const router=useRouter();
     const [isVisible, setIsVisible] = useState(false)
       useEffect(() => {
         setIsVisible(true)
@@ -31,6 +34,7 @@ export default function Hero(){
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row animate-fade-in animation-delay-500">
                   <Button
+                    onClick={()=> router.push("/browse-pets") }
                     size="lg"
                     className="bg-rose-500 hover:bg-rose-600 text-white transform hover:scale-105 transition-all duration-300 hover:shadow-lg group cursor-pointer"
                   >

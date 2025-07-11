@@ -14,7 +14,7 @@ interface Pet {
   name: string
   type: string
   breed: string
-  age: string
+  age: number
   gender: string
   location: string
   image: string
@@ -193,7 +193,7 @@ export function PetCard({ pet, index }: PetCardProps) {
                   transition={{ delay: index * 0.1 + 0.6 }}
                 >
                   <Calendar className="h-4 w-4 mr-2" />
-                  <span>{pet.age}</span>
+                  <span>{pet.age} years</span>
                 </motion.div>
 
                 <motion.div
@@ -218,7 +218,7 @@ export function PetCard({ pet, index }: PetCardProps) {
             >
               <motion.div className="flex-1" variants={buttonVariants} whileHover="hover" whileTap="tap">
                 <Button
-                  className="w-full bg-gradient-to-r from-red-600 to-red-700  shadow-lg cursor-pointer"
+                  className="w-full bg-gradient-to-r from-rose-500 to-red-500  shadow-lg cursor-pointer"
                   disabled={pet.status === "Pending"}
                 >
                   {pet.status === "Available" ? "Adopt Me" : "Adoption Pending"}

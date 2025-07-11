@@ -1,9 +1,11 @@
 import { time } from "framer-motion/m";
 import { ScrollReveal } from "./scroll-reveal";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 import { motion, useTime } from "framer-motion";
 
 export default function CTA(){
+  const router=useRouter();
     return(
         <ScrollReveal animation="scale">
                   <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-rose-500 via-pink-500 to-red-500 overflow-hidden">
@@ -21,6 +23,7 @@ export default function CTA(){
                         <ScrollReveal animation="fadeUp" delay={300}>
                           <div className="flex flex-col gap-2 min-[400px]:flex-row">
                             <Button
+                              onClick={()=> router.push("/browse-pets") }
                               variant="outline"
                               size="lg"
                               className="border-white text-white hover:bg-white hover:text-rose-500 bg-transparent transform hover:scale-105 transition-all duration-300 hover:shadow-xl cursor-pointer"
